@@ -1,0 +1,24 @@
+# Editor specific config
+*.sublime-project
+.vs/
+.vscode/
+# optimizations
+__pycache__/
+*.py[cod]
+*$py.class
+# pyenv
+.python-version
+# environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# misc
+*.swp
+# config
+*.init
+*.json
+database/
