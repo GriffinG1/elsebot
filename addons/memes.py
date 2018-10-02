@@ -9,28 +9,13 @@ class Memes:
     def __init__(self, bot):
         self.bot = bot
 
-    # SSS memes
-
-    @commands.command()
-    async def gudie(self, ctx):
-        """Follow the Gudie to become a l33t Corbenik hax0r."""
-        await ctx.send("https://gudie.racklab.xyz/")
+    # sss like memes, quite a few gone
 
     @commands.command()
     async def rip(self, ctx):
         """F"""
         msg = await ctx.send("Press F to pay respects.")
         await msg.add_reaction("🇫")
-
-    @commands.command(aliases=["t3ch"])
-    async def tech(self, ctx):
-        """Goddamn Nazimod"""
-        return await ctx.send("https://i.imgur.com/4kANai8.png")
-
-    @commands.command()
-    async def heil(self, ctx):
-        """SIEG HEIL"""
-        await ctx.send("HEIL T3CHNOLOG1C!")
 
     @commands.command()
     async def lenny(self, ctx):
@@ -52,26 +37,7 @@ class Memes:
         """Memes."""
         await ctx.send("http://i.imgur.com/IpQC6IF.png")
 
-    # SSS spammy-ish memes that need a cooldown
-    @commands.cooldown(rate=1, per=30.0, type=commands.BucketType.channel)
-    @commands.command(aliases=["astronautlevel"])
-    async def astro(self, ctx):
-        """MEMES???"""
-        await ctx.send(
-            "ASTRO DOES IT AGAIN!!!\n"
-            "The peak nazi mod recuperance has occurred, mimicing the occurrence of 2016 where he "
-            "once emotionally manipulated s_99 and xorhash to die off the server.\nIn that time, "
-            "it was an emotionally draining period in which tensions were high and confusion was "
-            "all over the place.\nThe word on the street places that this time is very similar "
-            "to that time, in the dark days of the previously old, now defunct, 3d shacks, which "
-            "was renamed to Nintendo Homebrew as of the final official takeover of Emma in late "
-            "2016-early 2017, with the help of Ian.\nHowever, the old tales of his exploits have "
-            "been sung across the land, and it is possible that they have led to influence over"
-            "this most recent attempt of takeover of SSS.\nThe real quandry of all this "
-            "however, is, how will he now react to the new role in taking over SSS?\nWill his "
-            "potential ownership be riddeled with as much controversy as his old temporary "
-            "ownership in 3dshacks? The future alone will know."
-        )
+    # SSS spammy-ish memes that need a cooldown    )
 
     @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
     @commands.command()
@@ -284,6 +250,22 @@ class Memes:
         """MEMES?"""
         await ctx.send("https://i.imgur.com/cWXBb5g.png")
 
+    @commands.command()
+    async def r34(self, ctx):
+        """MEMES?"""
+        await ctx.send("http://i.imgur.com/sjQZKBF.gif")
+
+    @commands.command()
+    async def lucina(self, ctx):
+        """MEMES?"""
+        await ctx.send("http://i.imgur.com/ZPMveve.jpg")
+
+    @commands.command()
+    async def lucina2(self, ctx):
+        """MEMES?"""
+        await ctx.send("http://i.imgur.com/ZPMveve.jpg")
+
+    
     # GIB DONGRODER LAZY DEV
     @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
     @commands.command()
@@ -357,13 +339,9 @@ class Memes:
                        "or GNU/Linux. All the so-called \"Linux\" distributions are really "
                        "distributions of GNU/Linux.```")
 
+    
     @commands.command()
     async def kina(self, ctx):
-        """kona"""
-        await ctx.send("https://imgur.com/W3u6CoR")
-
-    @commands.command()
-    async def kina2(self, ctx):
         """Memes."""
         await ctx.send("http://imgur.com/8Mm5ZvB")
 
