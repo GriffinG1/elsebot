@@ -43,7 +43,7 @@ async def on_ready():
         bot.staff_role = get(guild.roles, name="staff")
         bot.botdev_role = get(guild.roles, name="botperson")
         bot.nsfw_role = get(guild.roles, name="NSFW")
-        bot.muted_role = get(guild.roles, name="Muted")
+        bot.muted_role = get(guild.roles, name="muted")
         bot.approved_role = get(guild.roles, name="approved")
 
         # Color Roles
