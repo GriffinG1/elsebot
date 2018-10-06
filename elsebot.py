@@ -27,7 +27,7 @@ if not isfile("database/config.json"):
 config = load(open("database/config.json", "r"))
 
 bot = commands.Bot(command_prefix=config['prefix'], description="elsebot, the elseplaces bot.",
-                   max_messages=10000, pm_help=True)
+                   max_messages=10000)
 
 
 @bot.event
