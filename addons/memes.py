@@ -36,160 +36,8 @@ class Memes:
     async def macboy(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/IpQC6IF.png")
-
-    # SSS spammy-ish memes that need a cooldown    )
-
-    @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
-    @commands.command(hidden=True)
-    async def xkyup(self, ctx, variant: str=""):
-        """
-        MEMES???
-        This meme has multiple variants : fr, es, it, jp, de, pl, pt, nl, se, bees
-        You can also specify your own variant, and it will automatically generate a copypasta:
-        I'm so sorry, I was a fucking retard for saying words that would get me in touble and
-        anger lots of people who {} or who are dating {}.
-        I didn't think before I spoke a word so it just came out as something totally wrong,
-        I don't hate anybody who is {}, just the community. I like {}, just not the {} community.
-        I'm sorry for all of this. All I'm asking for is a apology is all. I should have been
-        thinking before I spoke."
-        """
-        if not variant:
-            await ctx.send(
-                "I'm so sorry, I was a fucking retard for saying words that would get me in touble"
-                " and anger lots of people who are transgender or who are dating a transgender "
-                "person. I didn't think before I spoke a word so it just came out as something "
-                "totally wrong, I don't hate anybody who is transgender, just the community. I "
-                "like Aurora, just not the trans community. I'm sorry for all of this. All I'm "
-                "asking for is a apology is all. I should have been thinking before I spoke."
-            )
-
-        elif variant.lower() == "fr":
-            await ctx.send(
-                "Je suis tellement désolé, j'étais un putain d'attardé pour avoir dit des mots qui"
-                " me mettraient dans le pétrin et qui mettraient beaucoup de personnes qui sont "
-                "transgenres ou qui sont en couple avec une personne transgenre. Je n'ai pas "
-                "réfléchi avant d'avoir dit un mot donc c'est juste sorti comme quelque chose de "
-                "totalement faux, je ne déteste aucune personne transgenre, seulement la "
-                "communauté. J'aime bien Aurora, juste pas la communauté trans. Je suis désolé "
-                "pour tout ceci. Tout ce que je demande c'est des excuses, c'est tout. J'aurais du"
-                " réfléchir avant de parler."
-            )
-
-        elif variant.lower() == "es":
-            await ctx.send(
-                "Estoy muy arrepentido, fui un estupido retardado por decir esas palabras que me "
-                "pondrian en problemas y hacer enojar a mucha gente que son transexuales o que "
-                "estan saliendo con una persona transexual. No pense antes de decir una palabra "
-                "asi que salio como algo totalmente mal. Yo no odio cualquiera que sea transexual"
-                ",solo la comunidad. Me gusta Aurora, solo no la trans comunidad. Estoy "
-                "arrepentido por todo esto. Lo unico que pido es una disculpa. Tuve que haer "
-                "pensado antes de hablar."
-            )
-
-        elif variant.lower() == "it":
-            await ctx.send(
-                "Mi dispiace così tanto, sono stato un fottuto idiota per aver detto cose che mi "
-                "avrebbero messo nei guai e avrebbero fatto arrabbiare un sacco di persone che "
-                "sono transgender o che stanno insieme ad una persona transgender. Non ho pensato "
-                "prima di aprire bocca quindi è sembrato qualcosa di completamente sbagliato, non "
-                "odio nessuno che sia transgender, solo la comunità. Mi piace Aurora, solo non l"
-                "a comunità trans. Mi dispiace per tutto questo. Tutto ciò che sto chiedendo è di "
-                "chiedere scusa, tutto qui. Avrei dovuto pensare prima di parlare."
-            )
-
-        elif variant.lower() == "jp":
-            await ctx.send(
-                "本当に申し訳ない, 私は多くのトランス人やトランス人をデートする人を怒らせる言葉で困ってしまった言葉を言ってからクソなリタードだった。 言葉を言った前に思った"
-                "なかったから全く間違っていた何かを来た、誰でもトランスジェンダは嫌いじゃなくてあのコミュニティだけ嫌い。オーロラが好き、トランスのコミュニティだけではない。これは本"
-                "当にすみません。私が求めているのは謝罪だけ。話す前に思っていたはずだった。"
-            )
-
-        elif variant.lower() == "de":
-            await ctx.send(
-                "Es tut mir sehr Leid, Ich war ein verfickter Behinderter als ich diese Worte sagte"
-                " und wusste nicht wie sehr ich Ärger kriegen würde und wie sehr ich transsexuelle "
-                "Menschen oder Menschen die transsexuelle daten erzörnen würde. Ich habe nicht "
-                "gedacht bevor ich das Wort sagte und so kam es raus als was komplett falsches. "
-                "Ich hasse keine Transsexuellen, nur die Gemeinschaft. Ich mag Transsexuelle, nur "
-                "nicht die Gemeinschaft. Es tut mir sehr leid für all das. Ich bitte nur um "
-                "Verzeihung. Ich hätte nachdenken sollen bevor ich den Mund aufgemacht habe."
-            )
-
-        elif variant.lower() == "pl":
-            await ctx.send(
-                "Bardzo mi przykro, byłem jebanym idiotą gdy wypowiedziałem te słowa i nie "
-                "zdawałem sobie sprawy z tego jak bardzo naprzykrze sie osobom transseksualnym "
-                "lub tym którzy chodzą z transseksualistami. Nie myślałem gdy wypowiedziałem te "
-                "słowa i to co wyszło z moich ust było smutne i nieprawidłowe. Nic nie mam do osób"
-                " trans, tylko do ich społeczności Lubie osoby trans, nie lubie tylko ich "
-                "społeczności. Bardzo mi za to wszystko przykro. Proszę o przebaczenie. "
-                "Powinienem był pomyśleć zanim cokolwiek napisałem."
-            )
-
-        elif variant.lower() == "pt":
-            await ctx.send(
-                "Peço imensa desculpa. Fui um grande retardado por dizer palavras que me iam meter"
-                " em sarilhos com pessoas trans ou que estão a namorar com uma pessoa trans. "
-                "Eu não pensei antes de falar por isso aquilo saiu como algo totalmente mau, eu "
-                "não detesto ninguem que seja trans, só a comunidade trans. Eu gosto da Aurora, "
-                "só não gosto da comunidade trans. Peço desculpa por tudo isto. Só peço que me "
-                "desculpem. Devia ter pensado antes de ter falado."
-            )
-
-        elif variant.lower() == "nl":
-            await ctx.send(
-                "Het spijt me zo erg, ik was een echt achterlijk om woorden te zeggen die mij "
-                "in moeite zou brengen en die veel mensen die transgender zijn of die in een "
-                "relatie zijn met een transgender persoon boos zou maken. Ik heb niet nagedacht "
-                "voor het spreken, dus kwam het als iets totaal vals, ik haat niemand die "
-                "transgender is, alleen de gemeenschap. Ik hou van Aurora, alleen niet van de "
-                "trans gemeenschap. Het spijt me voor dit alles. Alles what ik vraag is excuses, "
-                "dat is alles. Ik had moeten denken voordat ik sprak"
-            )
-
-        elif variant.lower() == "se":
-            await ctx.send(
-                "hello guys im very sorry for punching a woman in discord chat. i do not "
-                "understand what i do i am only muslim man coming to sweden from long "
-                "country away i am very sorry this has been very sad and i only want "
-                "apology so i do not bring shame on family that come sweden"
-            )
-
-        elif variant.lower() == "bees":
-            await ctx.send(
-                "I'm so sorry, I was a fucking retard for saying words that would get me in touble"
-                " and anger lots of people who are bees or who are dating a bee. I didn't think "
-                "before I spoke a word so it just came out as something totally wrong, I don't "
-                "hate anybody who is a bee, just the hive. I like bees, just not the beehive. I'm "
-                "sorry for all of this. All I'm asking for is a apology is all. "
-                "I should have been thinking before I spoke."
-            )
-
-        else:
-            try:
-                variant = await commands.clean_content().convert(ctx, variant)
-                words = variant.split(',')
-                await ctx.send(
-                    "I'm so sorry, I was a fucking retard for saying words that would get me in "
-                    "touble and anger lots of people who {} or who are dating {}. I didn't think "
-                    "before I spoke a word so it just came out as something totally wrong, I don't"
-                    " hate anybody who is {}, just the community. I like {}, just not the {} "
-                    "community. I'm sorry for all of this. All I'm asking for is a apology is all."
-                    " I should have been thinking before I spoke."
-                    "".format(words[0], words[1], words[2], words[3], words[4])
-                )
-            except IndexError:
-                await ctx.send("Your syntax is incorrect. Please use the following syntax : "
-                               "`.xkyup \"word1,word2,word3,word4,word5\"`. You must specify the 5"
-                               " words.")
-                return
-
+        
     # Kurisu memes
-    @commands.command(hidden=True)
-    async def s_99(self, ctx):
-        """Memes."""
-        await ctx.send("**ALL HAIL BRITANNIA!**")
-
     @commands.command(hidden=True)
     async def dubyadud(self, ctx):
         """Memes."""
@@ -234,11 +82,6 @@ class Memes:
     async def whatisr(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/Z8HhfzJ.jpg")
-
-    @commands.command(hidden=True)
-    async def sn0w(self, ctx):
-        """Memes."""
-        await ctx.send("http://i.imgur.com/sFD5uSB.png")
 
     @commands.command(hidden=True)
     async def helpers(self, ctx):
@@ -362,7 +205,7 @@ class Memes:
     @commands.command()
     async def listmemes(self, ctx): #I can't be bothered to have this update automatically
         """Lists the memes"""
-        memes = "```beepbeep\nbirds\nblackalabi\nbrickdurr\nconcern\ndongroder\ndubyadud\ngnulinux\nhelpers\nkina\nlenny\nlisp\nlucina\nlucina2\nmacboy\npbanjo\npermabrocked\nr34\nrip\nrusure\ns_99\nsn0w\nsoghax\nthemes\nthumbsup\nwhatisr\nxkyup```"
+        memes = "```beepbeep\nbirds\nblackalabi\nbrickdurr\nconcern\ndongroder\ndubyadud\ngnulinux\nhelpers\nkina\nlenny\nlisp\nlucina\nlucina2\nmacboy\npbanjo\npermabrocked\nr34\nrip\nrusure\nsoghax\nthemes\nthumbsup\nwhatisr```"
         await ctx.send(memes)
 
 
