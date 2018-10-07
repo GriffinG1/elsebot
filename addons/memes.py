@@ -11,28 +11,28 @@ class Memes:
 
     # sss like memes, quite a few gone
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def rip(self, ctx):
         """F"""
         msg = await ctx.send("Press F to pay respects.")
         await msg.add_reaction("🇫")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def lenny(self, ctx):
         """( ͡° ͜ʖ ͡°)"""
         await ctx.send("( ͡° ͜ʖ ͡°)")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def brickdurr(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/hzuXOHP.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def birds(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/fVAx5oh.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def macboy(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/IpQC6IF.png")
@@ -40,7 +40,7 @@ class Memes:
     # SSS spammy-ish memes that need a cooldown    )
 
     @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
-    @commands.command()
+    @commands.command(hidden=True)
     async def xkyup(self, ctx, variant: str=""):
         """
         MEMES???
@@ -185,82 +185,82 @@ class Memes:
                 return
 
     # Kurisu memes
-    @commands.command()
+    @commands.command(hidden=True)
     async def s_99(self, ctx):
         """Memes."""
         await ctx.send("**ALL HAIL BRITANNIA!**")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def dubyadud(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/Sohsi8s.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def rusure(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/dqh3fNi.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def permabrocked(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/ARsOh3p.jpg")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def thumbsup(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/hki1IIs.gifv")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def pbanjo(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/sBJKzuK.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def lisp(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/RQeZErU.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def blackalabi(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/JzFem4y.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def soghax(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/oQJy2eN.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def whatisr(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/Z8HhfzJ.jpg")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def sn0w(self, ctx):
         """Memes."""
         await ctx.send("http://i.imgur.com/sFD5uSB.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def helpers(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/0v1EgMX.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def concern(self, ctx):
         """MEMES?"""
         await ctx.send("https://i.imgur.com/cWXBb5g.png")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def r34(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/sjQZKBF.gif")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def lucina(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/ZPMveve.jpg")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def lucina2(self, ctx):
         """MEMES?"""
         await ctx.send("http://i.imgur.com/ZPMveve.jpg")
@@ -268,7 +268,7 @@ class Memes:
     
     # GIB DONGRODER LAZY DEV
     @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
-    @commands.command()
+    @commands.command(hidden=True)
     async def dongroder(self, ctx, variant=""):
         """MEMES?!?
         This meme has multiple variants : piter, swotch.
@@ -316,7 +316,7 @@ class Memes:
             )
 
     @commands.cooldown(rate=1, per=10.0, type=commands.BucketType.channel)
-    @commands.command()
+    @commands.command(hidden=True)
     async def gnulinux(self, ctx,):
         """GNU/Linux Copy Pasta"""
         await ctx.send("```I'd just like to interject for a moment. What you're referring to as "
@@ -340,24 +340,30 @@ class Memes:
                        "distributions of GNU/Linux.```")
 
     
-    @commands.command()
+    @commands.command(hidden=True)
     async def kina(self, ctx):
         """Memes."""
         await ctx.send("http://imgur.com/8Mm5ZvB")
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def beepbeep(self, ctx, *, roast: str="Roast"):
         """Bope"""
         roast = await commands.clean_content().convert(ctx, roast)
         await ctx.send("Your {} is ready".format(roast))
 
-    @commands.command()
+    @commands.command(hidden=True)
     async def themes(self, ctx):
         """S a l t"""
         await ctx.send("When it comes to custom theme managers on "
                        "the 3ds there haven't always been that "
                        "many choices\nI can only think of three "
                        "off the top of my head")
+                       
+    @commands.command()
+    async def listmemes(self, ctx): #I can't be bothered to have this update automatically
+        """Lists the memes"""
+        memes = "```beepbeep\nbirds\nblackalabi\nbrickdurr\nconcern\ndongroder\ndubyadud\ngnulinux\nhelpers\nkina\nlenny\nlisp\nlucina\nlucina2\nmacboy\npbanjo\npermabrocked\nr34\nrip\nrusure\ns_99\nsn0w\nsoghax\nthemes\nthumbsup\nwhatisr\nxkyup```"
+        await ctx.send(memes)
 
 
 def setup(bot):

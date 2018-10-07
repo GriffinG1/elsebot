@@ -2,6 +2,7 @@ from datetime import datetime
 
 from discord import Embed, errors, Color, Member
 from discord.ext import commands
+import datetime
 
 
 class Misc:
@@ -12,16 +13,14 @@ class Misc:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True) # taken from https://github.com/appu1232/Discord-Selfbot/blob/873a2500d2c518e0d25ca5a6f67828de60fbda99/cogs/misc.py#L626
     async def ping(self, ctx):
         """Pong!"""
-        mtime = ctx.message.created_at
-        currtime = datetime.now()
-        latency = currtime - mtime
-        ptime = str(latency.microseconds / 1000.0)
-        await ctx.send(":ping_pong:! Pong! Response time: {} ms".format(ptime))
-        return
-
+        msgtime = ctx.message.created_at.now()
+        await (await self.bot.ws.ping())
+        now = datetime.datetime.now()
+        ptime = now - msgtime
+        await ctx.send(':ping_pong:! Pong! Response time: %s ms' % str(ptime.microseconds / 1000.0))
     @commands.command(pass_context=True, aliases=['mc'])
     async def membercount(self, ctx):
         """Prints current member count"""
